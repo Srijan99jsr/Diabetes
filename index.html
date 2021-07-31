@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Predictor</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Google Font - Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+
+    
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+    
+            <a class="navbar-brand" href="">&#10010;  Diabetes Predictor</a>
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analyzer">Analyzer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#predictor">Predictor</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <br><br><br><br>
+
+    
+    <!-- Analyzer -->
+
+    <div class="analyzer" id="analyzer">
+        <div class="row">
+            <div class="left-column col-lg-6">
+                <h1>&#10137; What is Diabetes ?</h1>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+                    obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+                    nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+                    tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+                    quia. Quo neque error repudiandae fuga? 
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+                    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+                    optio, eaque rerum! Provident similique accusantium nemo autem.
+                </p>
+
+                <a href="tableau.html"><button type="button" class="btn btn-dark btn-lg"> Analysis </button></a>
+            </div>
+
+            <div class="right-column col-lg-6">
+                <img src="images/bulb.png" alt="" srcset="">
+            </div>
+
+        </div>
+        
+    </div>
+    <hr>
+    <br><br><br><br>
+
+    <div class="predictor" id="predictor">
+        <div class="row">
+
+            <div class="left-column col-lg-6">
+                <img src="images/health1.png" alt="" srcset="">
+            </div>
+
+            <div class="right-column col-lg-6">
+                <h1>&#10137; Diabetes Predictor</h1>
+                <br><br>
+
+                <form action="" method="post">
+                    <label for="pregnancies"> Pregnancies &emsp;&emsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="pregnancies" id="pregnancies" pattern="[0-9]" placeholder="Number of Pregnancies">
+                    <br><br>
+
+                    <label for="Glucose"> Glucose&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="glucose" id="glucose" placeholder="Glucose">
+                    <br><br>
+
+                    <label for="bloodpressure"> Blood Pressure &emsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="bloodpressure" id="bloodpressure">
+                    <br><br>
+
+                    <label for="skinthickness"> Skin thickness &emsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="skinthickness" id="skinthickness">
+                    <br><br>
+
+                    <label for="insulin"> Insulin &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="insulin" id="insulin">
+                    <br><br>
+
+                    <label for="bmi"> Body Mass Index &nbsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="bmi" id="bmi">
+                    <br><br>
+
+                    <label for="dpf"> Diabetes Pedigree <br>Function &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="dbf" id="dbf">
+                    <br><br>
+
+                    <label for="age"> Age &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;:&nbsp;&nbsp;</label>
+                    <input type="text" name="age" pattern="[1-125]" id="age">
+                    <br><br>
+
+                    <input type="submit" value="Submit" class="btn btn-dark btn-lg">
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+</body>
+
+<!-- Footer -->
+
+<hr>
+
+<Footer class="white-section" id="footer">
+
+    <a href=""><i class="social-icon fab fa-facebook-f"></i></a>
+    <a href=""><i class="social-icon fab fa-twitter"></i></a>
+    <a href=""><i class="social-icon fab fa-instagram"></i></a>
+    <a href=""><i class="social-icon fas fa-envelope"></i></a>
+
+    <p>@Sanjana</p>
+
+    <hr>
+
+</Footer>
+
+
+</html>
